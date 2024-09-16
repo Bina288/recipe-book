@@ -11,6 +11,8 @@
       <img
         v-if="recipe.image"
         :src="recipeImageResized"
+        width="312"
+        height="231"
         alt="Recipe Image"
         class="recipe__image"
         loading="lazy"
@@ -88,7 +90,8 @@ export default {
 }
 
 .recipe__image {
-  max-width: 231px;
+  width: 100%;
+  height: auto;
   padding: 10px;
   border-radius: 15px;
 }
@@ -111,7 +114,6 @@ export default {
 
 @media screen and (max-width: 450px) {
   .recipe__image {
-    max-width: 300px;
     border-radius: 20px;
   }
 

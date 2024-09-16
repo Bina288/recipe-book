@@ -4,6 +4,8 @@
     <img
       id="recipe img"
       :src="recipeImageResized"
+      width="312"
+      height="231"
       alt="Recipe Image"
       class="detail-recipe__image"
       @error="onImageErrorNotFound"
@@ -53,8 +55,8 @@ export default {
 }
 
 .detail-recipe__image {
-  max-width: 25rem;
-  width: 70%;
+  width: 50%;
+  height: auto;
   padding: 10px;
   border-radius: 20px;
 }
